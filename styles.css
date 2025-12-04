@@ -1,0 +1,16 @@
+.myHeader{
+    text-align:center;
+
+}
+
+.myNumber{
+    text-align:center;
+    font-size:larger;
+}
+
+button{
+    color:white;
+    background-color:black;
+    padding:15px;
+    font-size:larger;
+}

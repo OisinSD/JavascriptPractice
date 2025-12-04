@@ -74,3 +74,68 @@ function showDetails(){
     function refreshPage(){
         location.reload();
     }
+
+
+    // function one(){
+    //     document.getElementById('calScreen').innerHTML += "1";
+    // }
+    function two(){
+        document.getElementById('calScreen').innerHTML += "2";
+    }
+    function three(){
+        document.getElementById('calScreen').innerHTML += "3";
+    }
+    function four(){
+        document.getElementById('calScreen').innerHTML += "4";
+    }
+    function five(){
+        document.getElementById('calScreen').innerHTML += "5";
+    }
+    function six(){
+        document.getElementById('calScreen').innerHTML += "6";
+    }
+    function seven(){
+        document.getElementById('calScreen').innerHTML += "7";
+    }
+    function eight(){
+        document.getElementById('calScreen').innerHTML += "8";
+    }
+    function nine(){
+        document.getElementById('calScreen').innerHTML += "9";
+    }
+    function divide(){
+        document.getElementById('calScreen').innerHTML += "÷";
+    }
+    function multiple(){
+        document.getElementById('calScreen').innerHTML += "*";
+    }
+    function minus(){
+        document.getElementById('calScreen').innerHTML += "-";
+    }
+    function plus(){
+        document.getElementById('calScreen').innerHTML += "+";
+    }
+    function point(){
+        document.getElementById('calScreen').innerHTML += ".";
+    }
+    function C(){
+        document.getElementById("calScreen").innerHTML = "";
+    }
+
+    function addToString(input){
+        let userInput = Number(input);
+        switch(input){
+            case 1:
+                document.getElementById('calScreen').innerHTML += "1";
+        }
+    }
+    function equals(){
+        let screen = document.getElementById('calScreen').innerHTML;
+        let result = eval(screen);
+        document.getElementById('calScreen').innerHTML = result;
+    }
+
+    function del(){
+        let screen = document.getElementById('calScreen').innerHTML;
+            document.getElementById('calScreen').innerHTML = screen.slice(0, -1)
+    }

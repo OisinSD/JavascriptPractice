@@ -8,9 +8,38 @@
     font-size:larger;
 }
 
-button{
+.myButton{
     color:white;
     background-color:black;
-    padding:15px;
+    padding:5px;
     font-size:larger;
+}
+
+.inputArea {
+    display: flex;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+}
+
+.myform {
+    width: auto; 
+    max-width: 90%; 
+}
+
+.myFieldset {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient( white, lightgray );
+}
+.mylegend {
+    background-color: white;
+    /* padding:5px; */
+    /* border: 1px solid black; */
+    border-radius: 15px;
+}
+.viewDetailsButton{
+    display: flex;
+    justify-content: space-between;
 }

@@ -17,33 +17,60 @@ function reset(){
     document.getElementById("myNumber").innerHTML = data;
 }
 
-// 1. The Data Array (Corrected Structure)
+
 const cities = [
     { name: "Dublin" }, 
     { name: "Cork" },
-    { name: "Galway" } // Added a third for better illustration
+    { name: "Galway" } 
 ];
 
-// 2. The Mapping Logic
-// Transform the array of city objects into an array of HTML <li> strings.
-// const cityItems = [];
+
 function showCities() {
-
     let cityItems = cities.map(city => {
-        // For each city object, return a new <li> element containing the name.
         return `<p>${city.name}</p>`;
-    });
+    })
     
-    // 3. Display Logic
+    document.getElementById('city-list').innerHTML = cityItems.join('');
+
+};
+
+
+function showDetails(){
     
-    document.getElementById('city-list').innerHTML = cityItems.join('<hr>');
-    // <h4><button></button></h4>
-    document.getElementById('resetButton').innerHTML = "Reset Cities";
-    resetCities();
-    // Join the array of <li> strings into a single string and insert it into the <ul>.
+    let firstName = document.getElementById('firstName').value;
+    let secondName = document.getElementById('secondName').value;
+    let age = document.getElementById('age').value;
+    let email = document.getElementById('email').value;
+    // const myDetails = [{firstName, secondName, age, email}] must be turned into a string but correct still
+    let myDetails2 = `
+    First Name: ${firstName}
+    Second Name: ${secondName}
+    Age: ${age}
+    Email: ${email} `;
+    // await.alert(name);
+    // alert (firstName);
+    // alert (secondName)
+    // alert(myDetails.map);
+    alert(myDetails2);
 }
 
-function resetCities(){
 
-    document.getElementById('city-list').innerHTML = "";
-}
+    function viewDetails(){
+        let firstName = document.getElementById('firstName').value;
+        let secondName = document.getElementById('secondName').value;
+        let age = document.getElementById('age').value;
+        let email = document.getElementById('email').value;
+        let myDetails = [  `First Name: ${firstName}`, `Second Name: ${secondName}`, `Age: ${age}`, `Email: ${email}`]
+        
+        let userInfo = myDetails.map(details => {
+            return `<p>${details}</p>` ;
+        })
+        
+        document.getElementById('displayInfo').innerHTML = userInfo.join('');
+        console.log(userInfo);
+    }
+
+    
+    function refreshPage(){
+        location.reload();
+    }

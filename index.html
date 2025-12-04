@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample HTML Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>  
+        <header class = "myHeader">
+            <h1>Welcome to My Website</h1>
+            <h3>You can click these buttons to change the counter</h3>
+            <hr>
+        </header>
+        <div class="myNumber">
+            <h4 id="myNumber"></h4>
+            <button class="myButton" onClick="increment()">+</button>
+            <button class="myButton" onClick="decrement()">-</button>
+            <button  class="myButton"onClick="reset()">Reset</button><br><br>
+            <hr>
+            <h3>I have a list of cities in ireland</h3>
+            <h3>want to see?</h3>
+            <button class="myButton" id = "resetButton" onClick="showCities()">Show Cities</button>
+            <p id="city-list"></p>
+            <button class="myButton" onClick="refreshPage()">Refresh</button>
+            <hr>
+        </div>
+            <div class="inputArea">
+                <form class="myform" onsubmit="return handleFormSubmission(event)">
+                    <fieldset class = "myFieldset" >
+                        <legend class="mylegend">Details Form</legend><br>
+                        <label>First Name:</label><br>
+                        <input type="Text" id="firstName" placeholder="Type here..."required><br><br>
+                        <label>Second Name:</label><br>
+                        <input type="Text" id="secondName" placeholder="Type here..." required><br><br>
+                        <label>Age:</label><br>
+                        <input type="age" id="age" placeholder="Type here..." required><br><br>
+                        <label>Email:</label><br>
+                        <input type="email" id="email" placeholder="Type here..." required><br><br>
+                        <div class="viewDetailsButton">
+                            <input id="mySubmitButton" type="submit" value="Submit" onClick="showDetails()">
+                            <button id="viewDetails" type="button" onClick="viewDetails()">View Details</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <p id="displayInfo"></p>
+
+            </div>
+            <script src="app.js"></script>
+    </body>
+</html>

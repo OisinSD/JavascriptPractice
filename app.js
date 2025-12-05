@@ -98,7 +98,7 @@ document.getElementById('rollDice').addEventListener('click', () =>{
         document.getElementById('rollDice').innerHTML = "Stop Rolling";
         yessir = setInterval(rollDice, 100)
     }else{
-         document.getElementById('rollDice').innerHTML = "Start Rolling";
+         document.getElementById('rollDice').innerHTML = "Start Rolling\n\t<button class = 'diceButton'>Reset</button>";
          clearInterval(yessir);
          checkWhoWon();
     }

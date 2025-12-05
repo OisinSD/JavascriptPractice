@@ -39,12 +39,54 @@
                         <input type="email" id="email" placeholder="Type here..." required><br><br>
                         <div class="viewDetailsButton">
                             <input id="mySubmitButton" type="submit" value="Submit" onClick="showDetails()">
-                            <button id="viewDetails" type="button" onClick="viewDetails()">View Details</button>
+                            <button id="viewDetails1" type="button" onClick="viewDetails()">View Details</button>
                         </div>
                     </fieldset>
-                </form>
-                <p id="displayInfo"></p>
-
+                </form><br><br>
+                            <p id="displayInfo"></p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h1 class="myCal">Calculator</h1>
+                <table class = "calculator">
+                    <thead>
+                        <tr>
+                            <th class="screen" colspan = "4" id="calScreen"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td onClick="input('/')" class="adders">/</td>
+                            <td onClick="input('*')" class="adders">*</td>
+                            <td onClick="input('-')" class="adders">-</td>
+                            <td onClick= "input('+')" class="adders">+</td>
+                        </tr>
+                        <tr>
+                            <td onClick="input('7')">7</td>
+                            <td onClick="input('8')">8</td>
+                            <td onClick="input('9')">9</td>
+                            <td onClick="input('del')" class="del">del</td>
+                        </tr>
+                        <tr>
+                            <td onClick="input('4')">4</td>
+                            <td onClick="input('5')">5</td>
+                            <td onClick="input('6')">6</td>
+                            <td onClick="input('C')" class="CC">C</td>
+                            
+                        </tr>
+                        <tr>
+                            <td onClick="input('1')">1</td>
+                            <td onClick="input('2')">2</td>
+                            <td onClick="input('3')">3</td>
+                            <td rowspan="2" onClick="input('=')" class="equals">=</td>
+                        </tr>
+                        <tr>
+                            <td onClick="input('.')">.</td>
+                            <td colspan="2" onClick = "input('0')" >0</td>
+                        </tr>
+                </tbody>
+                </table>
             </div>
             <script src="app.js"></script>
     </body>

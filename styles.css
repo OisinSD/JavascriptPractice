@@ -16,11 +16,14 @@
 }
 
 .inputArea {
-    display: flex;
+    /* display: flex; */
     /* Center horizontally */
-    justify-content: center;
+    /* justify-content: center; */
     /* Center vertically */
-    align-items: center;
+    /* align-items: center; */
+    width: fit-content;
+    margin:auto;
+
 }
 
 .myform {
@@ -42,4 +45,50 @@
 .viewDetailsButton{
     display: flex;
     justify-content: space-between;
+}
+.displayinformation{
+    display:flex;
+    justify-content: center;
+}
+.calculator{
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 300px;
+    border-collapse: collapse;    
+}
+.screen{
+    background-color: darkgray;
+}
+.calculator th, .calculator td {
+    border: 1px solid #ccc;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+    height: 60px; 
+    width: 25%; 
+    cursor: pointer;
+}
+
+.calculator td:hover{
+    background-image: linear-gradient(lightgray, gray);
+}
+.calculator th{
+    background-image: linear-gradient(lightgray, gray);
+}
+.del{
+    background-image: linear-gradient(rgb(247, 131, 131), red);
+}
+.adders{
+    background-image: linear-gradient(rgb(252, 205, 120), orange);
+    
+}
+.equals{
+    background-image: linear-gradient(lightgreen, green);
+}
+.myCal{
+
+   text-align: center;
+}
+.CC{
+    background-image:linear-gradient(lightblue,blue)
 }

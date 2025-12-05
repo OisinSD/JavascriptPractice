@@ -90,3 +90,35 @@ function showDetails(){
     }
 }
     
+// yessir = setInterval()
+let checker = 0;
+
+document.getElementById('rollDice').addEventListener('click', () =>{
+    if(checker % 2 == 0){
+        document.getElementById('rollDice').innerHTML = "Stop Rolling";
+        yessir = setInterval(rollDice, 100)
+    }else{
+         document.getElementById('rollDice').innerHTML = "Start Rolling";
+         clearInterval(yessir);
+         checkWhoWon();
+    }
+    checker++;
+});
+
+function rollDice(){
+    document.getElementById('diceOne').innerHTML = Math.floor((Math.random()*6)+1);
+    document.getElementById('diceTwo').innerHTML = Math.floor((Math.random()*6)+1);
+}
+
+function checkWhoWon(){
+    let pOne = document.getElementById('diceOne').innerHTML;
+    let pTwo = document.getElementById('diceTwo').innerHTML;
+
+    if(pOne > pTwo){
+        document.getElementById('winner').innerHTML = "Player One Won!";
+    }else if(pOne < pTwo){
+    document.getElementById('winner').innerHTML = "Player Two Won!";
+    }else{
+        document.getElementById('winner').innerHTML = "It Was A Draw!!";
+    }
+}

@@ -61,7 +61,7 @@
 }
 .calculator th, .calculator td {
     border: 1px solid #ccc;
-    padding: 0;
+    padding: 10px;
     text-align: center;
     font-size: 1.5em;
     height: 60px; 
@@ -91,4 +91,38 @@
 }
 .CC{
     background-image:linear-gradient(lightblue,blue)
+}
+.myDiceGame{
+    /* display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px auto;
+    padding-bottom:40px ; */
+    border: 2px solid black;
+    margin: 60px auto;
+    height:200px;
+    width: 300px;
+    /* border-collapse: collapse;  */
+    padding:30px;
+    border-radius:15px;
+    background-image: linear-gradient(lightgray, white, lightgray) ;
+}
+.myDiceGame th, .myDiceGame td{
+    /* border: 1px solid black; */
+    text-align: center;
+    justify-content: center;
+    padding:5px ;
+}
+.diceButton{
+    border-radius: 15px;
+    background-image: linear-gradient(blue, rgb(89, 138, 230), lightblue);
+}
+.diceButton:hover{
+    background-image: linear-gradient(rgb(0, 0, 212), rgb(114, 143, 153));
+    color:white;
+}
+.diceDisplay{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
 }
